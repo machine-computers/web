@@ -1,73 +1,118 @@
-# Welcome to your Lovable project
+# Machine - Cloud Computing Solutions
 
-## Project info
+**The computer company for the frontier.**
 
-**URL**: https://lovable.dev/projects/7d64e905-b794-4c78-ad62-fcd439897453
+Machine provides enterprise-grade cloud computing infrastructure designed for modern businesses. From managed cloud solutions to self-hosted deployments, we offer flexible computing resources that scale with your needs.
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **Multi-OS Support**: Full support for MacOS, Linux distributions, and Windows environments
+- **Managed & Self-Hosted**: Choose between fully managed cloud infrastructure or self-hosted deployments
+- **Custom Hardware Specs**: Configure CPU, RAM, storage, and GPU specifications
+- **Enterprise Security**: GDPR and ISO compliant with advanced security controls
+- **LDAP Integration**: Seamless integration with existing directory services
+- **Instant Provisioning**: Deploy new instances in seconds with automated configuration
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7d64e905-b794-4c78-ad62-fcd439897453) and start prompting.
+This project is built with modern web technologies:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: shadcn/ui component library
+- **Routing**: React Router v6
+- **State Management**: React Query for server state
+- **Icons**: Lucide React
 
-**Use your preferred IDE**
+## 🏃‍♂️ Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js 18+ and npm installed ([install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Clone the repository**
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd machine
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to see the application
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Header.tsx      # Navigation header
+│   ├── Footer.tsx      # Site footer
+│   ├── Hero.tsx        # Hero section
+│   ├── Features.tsx    # Features section
+│   ├── Compliance.tsx  # Compliance section
+│   ├── Pricing.tsx     # Pricing section
+│   └── ...
+├── pages/              # Page components
+│   ├── Index.tsx       # Home page
+│   ├── Features.tsx    # Features page
+│   ├── Pricing.tsx     # Pricing page
+│   ├── Security.tsx    # Security page
+│   ├── Compliance.tsx  # Compliance page
+│   ├── About.tsx       # About page
+│   ├── Careers.tsx     # Careers page
+│   └── ...
+├── lib/                # Utility functions
+├── hooks/              # Custom React hooks
+└── assets/             # Static assets
+```
+
+## 🎨 Design System
+
+The project uses a custom design system with:
+
+- **Typography**: Monospace fonts for technical aesthetic
+- **Color Palette**: High contrast with accent colors
+- **Layout**: Container-based responsive design
+- **Components**: Consistent styling with hover states and transitions
+
+## 🚀 Deployment
+
+### Development
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build for Production
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Preview Production Build
+```bash
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## 🤝 Contributing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+We welcome contributions! Please feel free to submit issues and pull requests.
 
-## What technologies are used for this project?
+## 📄 License
 
-This project is built with:
+This project is private and proprietary to Machine.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📞 Contact
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7d64e905-b794-4c78-ad62-fcd439897453) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For inquiries about our cloud computing solutions, please visit our [website](/) or contact our sales team.
