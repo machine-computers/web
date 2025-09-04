@@ -77,9 +77,9 @@ const Features = () => {
               <h1 className="text-4xl lg:text-6xl font-bold text-text-primary font-mono uppercase tracking-tight">
                 COMPREHENSIVE FEATURES
               </h1>
-              <p className="text-xl lg:text-2xl text-text-secondary max-w-3xl mx-auto font-mono leading-relaxed">
-                Everything you need to modernize your IT infrastructure and empower your teams with cutting-edge cloud computing solutions.
-              </p>
+               <p className="text-xl lg:text-2xl text-text-secondary max-w-3xl mx-auto font-mono leading-relaxed">
+                 We are the computer company of the frontier.
+               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
