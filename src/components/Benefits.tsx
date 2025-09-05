@@ -5,7 +5,6 @@ const benefits = [
   "Stop hardware waste - retire those shelf laptops",
   "Scale teams instantly without procurement delays", 
   "Maintain security with your existing protocols",
-  "GDPR and ISO compliance built-in",
   "Custom OS and software configurations",
   "Seamless integration with existing networks"
 ];

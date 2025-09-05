@@ -3,16 +3,6 @@ import { Shield, Lock, Users, FileCheck, Database, Key } from "lucide-react";
 
 const complianceFeatures = [
   {
-    icon: Shield,
-    title: "GDPR Compliance",
-    description: "Full compliance with EU General Data Protection Regulation, ensuring data protection and privacy rights for all users."
-  },
-  {
-    icon: Lock,
-    title: "ISO 27001 Certified",
-    description: "Certified information security management system with comprehensive security controls and audit trails."
-  },
-  {
     icon: Users,
     title: "LDAP Integration",
     description: "Seamless integration with existing LDAP directories for user authentication, group management, and access control."

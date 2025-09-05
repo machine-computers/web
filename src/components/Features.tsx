@@ -25,7 +25,7 @@ const features = [
   {
     icon: Shield,
     title: "Enterprise Security",
-    description: "GDPR and ISO compliant with advanced security controls and audit logs."
+    description: "Advanced security controls and audit logs."
   },
   {
     icon: Zap,

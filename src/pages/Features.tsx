@@ -31,7 +31,7 @@ const features = [
   {
     icon: Shield,
     title: "Enterprise Security",
-    description: "GDPR and ISO compliant with advanced security controls, end-to-end encryption, and comprehensive audit logging.",
+    description: "Advanced security controls, end-to-end encryption, and comprehensive audit logging.",
     details: "Built with security-first architecture including multi-factor authentication, role-based access control, and continuous security monitoring."
   },
   {
