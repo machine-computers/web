@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-12 pt-8 text-center text-sm text-text-tertiary">
-          © 2024 machine. All rights reserved.
+          © 2025 machine. All rights reserved.
         </div>
       </div>
     </footer>
