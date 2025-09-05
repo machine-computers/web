@@ -6,21 +6,13 @@ const Header = () => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
-  const headerFeatures = [
-    { icon: Monitor, label: "Any OS", desc: "macOS, Linux, Windows" },
-    { icon: Cloud, label: "Managed", desc: "Fully managed cloud" },
-    { icon: Server, label: "Self-Hosted", desc: "Run on your infra" },
-    { icon: Settings, label: "Custom Specs", desc: "CPU, RAM, GPU" },
-    { icon: Shield, label: "Security", desc: "MFA, RBAC, audits" },
-    { icon: Zap, label: "Instant Provisioning", desc: "< 60s deploys" },
-  ];
   const headerTiles = [
-    { icon: Monitor, label: "Any OS", desc: "macOS, Linux, Windows", span: "col-span-2 row-span-2" },
+    { icon: Monitor, label: "Any OS", desc: "macOS, Linux, Windows", span: "col-span-2 row-span-2 lg:row-span-3 lg:col-span-2" },
     { icon: Cloud, label: "Managed", desc: "Fully managed cloud", span: "row-span-2" },
     { icon: Server, label: "Self-Hosted", desc: "Run on your infra", span: "" },
-    { icon: Settings, label: "Custom Specs", desc: "CPU, RAM, GPU", span: "" },
-    { icon: Shield, label: "Security", desc: "MFA, RBAC, audits", span: "col-span-2" },
-    { icon: Zap, label: "Instant Provisioning", desc: "< 60s deploys", span: "" },
+    { icon: Settings, label: "Custom Specs", desc: "CPU, RAM, GPU", span: "col-span-2" },
+    { icon: Shield, label: "Security", desc: "MFA, RBAC, audits", span: "" },
+    { icon: Zap, label: "Instant Provisioning", desc: "< 60s deploys", span: "row-span-2" },
   ];
   return (
     <header className="border-b-4 border-text-primary bg-background">
@@ -75,7 +67,7 @@ const Header = () => {
                 </div>
               </div>
               <div>
-                <div className="grid grid-cols-3 auto-rows-[92px] gap-4">
+                <div className="grid grid-cols-3 lg:grid-cols-4 auto-rows-[92px] lg:auto-rows-[100px] gap-4">
                   {headerTiles.map((item, index) => (
                     <div
                       key={index}
