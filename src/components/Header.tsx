@@ -73,9 +73,7 @@ const Header = () => {
                       key={index}
                       className={`flex flex-col items-center justify-center gap-2 p-4 border-2 border-border bg-background hover:shadow-md hover:-translate-y-0.5 transition-all ${item.span}`}
                     >
-                      <div className="w-12 h-12 flex items-center justify-center bg-accent text-accent-foreground rounded">
-                        <item.icon className="w-6 h-6" />
-                      </div>
+                      <item.icon className="w-10 h-10 text-accent" />
                       <div className="text-xs font-mono uppercase text-text-primary tracking-wide text-center">
                         {item.label}
                       </div>
