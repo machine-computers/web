@@ -109,28 +109,3 @@ import { Button, Card, Header, Footer } from '@machine/design'
 </Card>
 <Footer />
 ```
-
-## 🔧 Architecture Benefits
-
-- **Shared Components**: Consistent UI across all applications
-- **Independent Development**: Teams can work on different apps simultaneously
-- **Scalable**: Easy to add new apps that leverage the design system
-- **Type Safety**: Full TypeScript support with proper exports
-- **Fast Builds**: Only rebuild what changes
-
-## 📝 Adding New Apps
-
-To add a new app to the monorepo:
-
-1. Create a new directory in `apps/`
-2. Set up the app with its own `package.json`
-3. Add `"@machine/design": "workspace:*"` as a dependency
-4. Import and use design system components
-5. Add build scripts to the root `package.json`
-
-## 🤝 Contributing
-
-1. Make changes in the appropriate package
-2. Test your changes with `pnpm build`
-3. Commit your changes
-4. Open a pull request
