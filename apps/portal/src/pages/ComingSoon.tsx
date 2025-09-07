@@ -20,12 +20,7 @@ export default function ComingSoon() {
           Notify Me
         </Button>
         
-        <div className="mt-8 pt-6 border-t border-border">
-          <p className="text-xs text-text-tertiary font-mono uppercase">
-            Expected Launch: Q2 2024
-          </p>
-        </div>
-      </Card>
+            </Card>
     </div>
   )
 }
