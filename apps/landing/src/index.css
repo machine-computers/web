@@ -1,0 +1,4 @@
+@import "@machine/design/styles";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
