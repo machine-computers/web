@@ -23,6 +23,8 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      // Relax unused vars rule for landing components
+      '@typescript-eslint/no-unused-vars': 'warn',
     },
   },
 )
