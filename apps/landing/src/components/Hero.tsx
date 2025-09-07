@@ -16,14 +16,14 @@ const Hero = ({ heroImage }: HeroProps) => {
                 <TrendingUp className="w-4 h-4" />
                 Next-Generation Computing
               </div>
-              <h1 className="text-4xl lg:text-8xl font-bold tracking-tight text-text-primary font-mono uppercase leading-[0.9]">
+              <h1 className="text-3xl sm:text-4xl lg:text-8xl font-bold tracking-tight text-text-primary font-mono uppercase leading-[0.9]">
                 COMPUTE
                 <br />
                 <span className="font-bold text-accent">ON DEMAND</span>
                 <br />
                 ANYWHERE
               </h1>
-              <p className="text-xl lg:text-2xl text-text-secondary max-w-lg font-mono leading-relaxed">
+              <p className="text-lg sm:text-xl lg:text-2xl text-text-secondary max-w-lg font-mono leading-relaxed">
                 Modern workloads demand compute power. We supply it in <strong className="text-accent">60 seconds</strong>. 
                 Any OS, any spec, any scale.
                 <br />
@@ -76,18 +76,18 @@ const Hero = ({ heroImage }: HeroProps) => {
               )}
               <div className="absolute inset-0 bg-background/10" />
               
-              {/* Floating metrics cards */}
-              <div className="absolute top-4 right-4 bg-background border-2 border-text-primary p-4 shadow-lg">
+              {/* Floating metrics cards - hidden on mobile */}
+              <div className="hidden md:block absolute top-4 right-4 bg-background border-2 border-text-primary p-4 shadow-lg">
                 <div className="text-2xl font-bold text-text-primary font-mono">&lt; 60s</div>
                 <div className="text-xs text-text-secondary font-mono uppercase">Deploy Time</div>
               </div>
               
-              <div className="absolute bottom-4 left-4 bg-accent text-accent-foreground border-2 border-accent p-4 shadow-lg">
+              <div className="hidden md:block absolute bottom-4 left-4 bg-accent text-accent-foreground border-2 border-accent p-4 shadow-lg">
                 <div className="text-2xl font-bold font-mono">99.9%</div>
                 <div className="text-xs font-mono uppercase">Uptime</div>
               </div>
               
-              <div className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-background border-2 border-text-primary p-3 shadow-lg">
+              <div className="hidden lg:block absolute top-1/2 left-4 transform -translate-y-1/2 bg-background border-2 border-text-primary p-3 shadow-lg">
                 <div className="text-lg font-bold text-text-primary font-mono">24/7</div>
                 <div className="text-xs text-text-secondary font-mono uppercase">Support</div>
               </div>
@@ -95,29 +95,34 @@ const Hero = ({ heroImage }: HeroProps) => {
             
             {/* OS/Architecture and Deployment badges under image */}
             <div className="mt-6 space-y-4 lg:ml-8">
-              <div className="flex flex-wrap gap-2 text-sm text-text-primary font-mono font-bold uppercase">
-                <div className="flex items-center gap-2 border border-text-primary px-3 py-2">
-                  <Monitor className="w-4 h-4" />
-                  MACOS M-SERIES
+              <div className="flex flex-wrap gap-2 text-xs sm:text-sm text-text-primary font-mono font-bold uppercase">
+                <div className="flex items-center gap-1 sm:gap-2 border border-text-primary px-2 sm:px-3 py-1 sm:py-2">
+                  <Monitor className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span className="hidden sm:inline">MACOS M-SERIES</span>
+                  <span className="sm:hidden">MACOS</span>
                 </div>
-                <div className="flex items-center gap-2 border border-text-primary px-3 py-2">
-                  <Monitor className="w-4 h-4" />
-                  LINUX ARM64
+                <div className="flex items-center gap-1 sm:gap-2 border border-text-primary px-2 sm:px-3 py-1 sm:py-2">
+                  <Monitor className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span className="hidden sm:inline">LINUX ARM64</span>
+                  <span className="sm:hidden">LINUX</span>
                 </div>
-                <div className="flex items-center gap-2 border border-text-primary px-3 py-2">
-                  <Monitor className="w-4 h-4" />
-                  WINDOWS x86
+                <div className="flex items-center gap-1 sm:gap-2 border border-text-primary px-2 sm:px-3 py-1 sm:py-2">
+                  <Monitor className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span className="hidden sm:inline">WINDOWS x86</span>
+                  <span className="sm:hidden">WINDOWS</span>
                 </div>
               </div>
               
-              <div className="flex flex-wrap gap-2 text-sm text-text-primary font-mono font-bold uppercase">
-                <div className="flex items-center gap-2 border border-accent px-3 py-2 bg-accent text-accent-foreground">
-                  <Cloud className="w-4 h-4" />
-                  ENTERPRISE MANAGED
+              <div className="flex flex-wrap gap-2 text-xs sm:text-sm text-text-primary font-mono font-bold uppercase">
+                <div className="flex items-center gap-1 sm:gap-2 border border-accent px-2 sm:px-3 py-1 sm:py-2 bg-accent text-accent-foreground">
+                  <Cloud className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span className="hidden sm:inline">ENTERPRISE MANAGED</span>
+                  <span className="sm:hidden">MANAGED</span>
                 </div>
-                <div className="flex items-center gap-2 border border-text-primary px-3 py-2">
-                  <Server className="w-4 h-4" />
-                  PRIVATE CLOUD
+                <div className="flex items-center gap-1 sm:gap-2 border border-text-primary px-2 sm:px-3 py-1 sm:py-2">
+                  <Server className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span className="hidden sm:inline">PRIVATE CLOUD</span>
+                  <span className="sm:hidden">PRIVATE</span>
                 </div>
               </div>
             </div>

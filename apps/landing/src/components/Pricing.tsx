@@ -45,39 +45,39 @@ const pricingTiers = [
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-24 bg-surface relative overflow-hidden">
-      {/* Geometric shapes */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-text-primary/5 transform rotate-12" />
-      <div className="absolute bottom-10 right-20 w-28 h-28 border-4 border-accent/10 transform -rotate-12" />
+    <section id="pricing" className="py-16 sm:py-24 bg-surface relative overflow-hidden">
+      {/* Geometric shapes - hidden on mobile */}
+      <div className="hidden md:block absolute top-20 left-10 w-20 h-20 bg-text-primary/5 transform rotate-12" />
+      <div className="hidden md:block absolute bottom-10 right-20 w-28 h-28 border-4 border-accent/10 transform -rotate-12" />
       
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-20 space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground font-mono text-sm font-bold uppercase border-2 border-accent">
-            <DollarSign className="w-4 h-4" />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-12 sm:mb-20 space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-accent text-accent-foreground font-mono text-xs sm:text-sm font-bold uppercase border-2 border-accent">
+            <DollarSign className="w-3 h-3 sm:w-4 sm:h-4" />
             Enterprise Pricing
           </div>
-          <h2 className="text-4xl lg:text-6xl font-bold text-text-primary font-mono uppercase tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-text-primary font-mono uppercase tracking-tight">
             Compute Power
             <br />
             <span className="text-accent">Priced Right</span>
           </h2>
-          <p className="text-xl lg:text-2xl text-text-secondary max-w-3xl mx-auto font-mono leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-text-secondary max-w-3xl mx-auto font-mono leading-relaxed px-4 sm:px-0">
             Pay for compute power, not hardware overhead. Transparent pricing that scales with your ambitions.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 mb-12 sm:mb-16">
           {pricingTiers.map((tier, index) => (
-            <Card key={index} className="p-10 border-4 border-text-primary bg-background hover:shadow-xl hover:-translate-y-1 transition-all">
-              <div className="space-y-8">
+            <Card key={index} className="p-6 sm:p-10 border-4 border-text-primary bg-background hover:shadow-xl hover:-translate-y-1 transition-all">
+              <div className="space-y-6 sm:space-y-8">
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-accent text-accent-foreground flex items-center justify-center mx-auto border-2 border-accent mb-4">
-                    <tier.icon className="w-10 h-10" />
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-accent text-accent-foreground flex items-center justify-center mx-auto border-2 border-accent mb-4">
+                    <tier.icon className="w-8 h-8 sm:w-10 sm:h-10" />
                   </div>
-                  <h3 className="text-3xl font-bold text-text-primary font-mono uppercase tracking-wide mb-2">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-text-primary font-mono uppercase tracking-wide mb-2">
                     {tier.title}
                   </h3>
-                  <p className="text-sm text-text-secondary font-mono uppercase mb-4">
+                  <p className="text-xs sm:text-sm text-text-secondary font-mono uppercase mb-4">
                     {tier.subtitle}
                   </p>
                   <div className="text-4xl font-bold text-text-primary font-mono mb-2">{tier.basePrice}</div>

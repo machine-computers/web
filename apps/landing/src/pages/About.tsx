@@ -1,5 +1,5 @@
 import { Header, Footer } from "@machine/design";
-
+import { Link, useLocation } from "react-router-dom";
 import { Card } from "@machine/design";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@machine/design";
 import { Target, Users, Globe, Zap, Shield, Rocket, Code2, Timer } from "lucide-react";
@@ -64,9 +64,11 @@ const coreValues = [
 ];
 
 const About = () => {
+  const location = useLocation();
+  
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header currentPath={location.pathname} LinkComponent={Link} />
       <main>
         {/* Hero Section */}
         <section className="py-24 bg-accent text-accent-foreground relative overflow-hidden">

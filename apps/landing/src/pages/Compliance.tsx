@@ -1,5 +1,5 @@
 import { Header, Footer } from "@machine/design";
-
+import { Link, useLocation } from "react-router-dom";
 import { Card } from "@machine/design";
 import { Shield, FileCheck, Users, Database, Lock, Globe, CheckCircle, AlertCircle } from "lucide-react";
 
@@ -79,9 +79,11 @@ const complianceAreas = [
 ];
 
 const Compliance = () => {
+  const location = useLocation();
+  
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header currentPath={location.pathname} LinkComponent={Link} />
       <main>
         {/* Hero Section */}
         <section className="py-24 bg-accent text-accent-foreground relative overflow-hidden">

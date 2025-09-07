@@ -16,7 +16,9 @@ const Index = () => {
       <main>
         <Hero heroImage={heroImage} />
         <Features />
-        <ROICalculator />
+        <div className="hidden lg:block">
+          <ROICalculator />
+        </div>
         <Compliance />
         <Pricing />
       </main>

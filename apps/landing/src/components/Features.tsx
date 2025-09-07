@@ -54,41 +54,41 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-24 bg-surface">
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="text-center mb-20 space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-background border-2 border-text-primary font-mono text-sm font-bold uppercase">
-            <BarChart3 className="w-4 h-4" />
+    <section id="features" className="py-16 sm:py-24 bg-surface">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-20 space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-background border-2 border-text-primary font-mono text-xs sm:text-sm font-bold uppercase">
+            <BarChart3 className="w-3 h-3 sm:w-4 sm:h-4" />
             Built for Scale
           </div>
-          <h2 className="text-4xl lg:text-6xl font-bold text-text-primary font-mono uppercase tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-text-primary font-mono uppercase tracking-tight">
             Infrastructure that
             <br />
             <span className="text-accent">grows with you</span>
           </h2>
-          <p className="text-xl lg:text-2xl text-text-secondary max-w-3xl mx-auto font-mono leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-text-secondary max-w-3xl mx-auto font-mono leading-relaxed px-4 sm:px-0">
             From seed stage to IPO. Scale your engineering teams without the traditional infrastructure bottlenecks.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="group p-8 border-2 border-border bg-surface-elevated hover:shadow-xl hover:-translate-y-2 hover:border-accent transition-all duration-300">
-              <div className="space-y-6">
+            <Card key={index} className="group p-6 sm:p-8 border-2 border-border bg-surface-elevated hover:shadow-xl hover:-translate-y-2 hover:border-accent transition-all duration-300">
+              <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-center justify-between">
-                  <div className="w-16 h-16 bg-accent flex items-center justify-center border-2 border-accent group-hover:scale-110 transition-transform duration-300">
-                    <feature.icon className="w-8 h-8 text-accent-foreground" />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent flex items-center justify-center border-2 border-accent group-hover:scale-110 transition-transform duration-300">
+                    <feature.icon className="w-6 h-6 sm:w-8 sm:h-8 text-accent-foreground" />
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-text-primary font-mono">{feature.metric}</div>
+                    <div className="text-xl sm:text-2xl font-bold text-text-primary font-mono">{feature.metric}</div>
                     <div className="text-xs text-text-secondary font-mono uppercase">{feature.metricLabel}</div>
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-text-primary font-mono uppercase tracking-wide group-hover:text-accent transition-colors">
+                  <h3 className="text-lg sm:text-xl font-bold text-text-primary font-mono uppercase tracking-wide group-hover:text-accent transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-base text-text-secondary font-mono leading-relaxed">
+                  <p className="text-sm sm:text-base text-text-secondary font-mono leading-relaxed">
                     {feature.description}
                   </p>
                 </div>

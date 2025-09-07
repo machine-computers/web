@@ -105,22 +105,22 @@ const complianceMetrics = [
 
 const Compliance = () => {
   return (
-    <section id="compliance" className="py-24 bg-background relative overflow-hidden">
-      {/* Geometric shapes */}
-      <div className="absolute top-20 right-20 w-20 h-20 border-4 border-text-primary/10 transform rotate-45" />
-      <div className="absolute bottom-20 left-10 w-28 h-28 bg-accent/5 transform -rotate-12" />
-      <div className="absolute top-1/2 left-1/2 w-12 h-12 border-4 border-accent/20" />
+    <section id="compliance" className="py-16 sm:py-24 bg-background relative overflow-hidden">
+      {/* Geometric shapes - hidden on mobile */}
+      <div className="hidden md:block absolute top-20 right-20 w-20 h-20 border-4 border-text-primary/10 transform rotate-45" />
+      <div className="hidden md:block absolute bottom-20 left-10 w-28 h-28 bg-accent/5 transform -rotate-12" />
+      <div className="hidden lg:block absolute top-1/2 left-1/2 w-12 h-12 border-4 border-accent/20" />
       
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-20 space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-accent-foreground font-mono text-sm font-bold uppercase border-2 border-accent">
-            <Shield className="w-4 h-4" />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-12 sm:mb-20 space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-accent text-accent-foreground font-mono text-xs sm:text-sm font-bold uppercase border-2 border-accent">
+            <Shield className="w-3 h-3 sm:w-4 sm:h-4" />
             Enterprise-Grade Security
           </div>
-          <h2 className="text-4xl lg:text-6xl font-bold text-text-primary font-mono uppercase tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-text-primary font-mono uppercase tracking-tight">
             COMPLIANCE & SECURITY
           </h2>
-          <p className="text-xl lg:text-2xl text-text-secondary max-w-3xl mx-auto font-mono leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-text-secondary max-w-3xl mx-auto font-mono leading-relaxed px-4 sm:px-0">
             Compliance isn't an afterthought. It's engineered into every layer of our computing platform.
           </p>
         </div>
