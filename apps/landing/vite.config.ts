@@ -20,8 +20,16 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
+    chunkSizeWarningLimit: 1000, // Increase limit to 1MB
     rollupOptions: {
       external: [],
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: ['@machine/design'],
+          icons: ['lucide-react'],
+        },
+      },
     },
   },
 }));
