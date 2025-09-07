@@ -11,14 +11,16 @@ export default function ComingSoon() {
           Coming Soon
         </h1>
         <p className="text-text-secondary mb-6 font-mono">
-          The Machine portal is under construction. 
+          The Machine portal is under construction.
           <br />
           <br />
-          Sign up to be notified when it's ready.
+          Join our waitlist to be notified when it's ready.
         </p>
-        <Button className="w-full font-mono font-bold uppercase border-2 border-text-primary bg-accent text-accent-foreground hover:bg-text-primary hover:text-background">
-          Notify Me
-        </Button>
+        <a href="https://getwaitlist.com/waitlist/31022" target="_blank" rel="noopener noreferrer">
+          <Button className="w-full font-mono font-bold uppercase border-2 border-text-primary bg-accent text-accent-foreground hover:bg-text-primary hover:text-background">
+            Join Waitlist
+          </Button>
+        </a>
         
             </Card>
     </div>

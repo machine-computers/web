@@ -1,5 +1,5 @@
 import { Button } from "@machine/design";
-import { ArrowRight, Cloud, Shield, Settings, Monitor, Server, TrendingUp, Users, DollarSign, Zap, Globe } from "lucide-react";
+import { ArrowRight, Cloud, Shield, Monitor, Server, TrendingUp, Globe } from "lucide-react";
 
 interface HeroProps {
   heroImage?: string;
@@ -31,15 +31,14 @@ const Hero = ({ heroImage }: HeroProps) => {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-6">
-              <Button variant="accent" size="lg" className="group text-lg px-12 py-4 h-14 font-bold">
-                Get a Quote
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-12 py-4 h-14 font-bold">
-                Book Demo
-              </Button>
-            </div>
+             <div className="flex flex-col sm:flex-row gap-6">
+               <a href="https://getwaitlist.com/waitlist/31022" target="_blank" rel="noopener noreferrer">
+                 <Button variant="accent" size="lg" className="group text-lg px-12 py-4 h-14 font-bold">
+                   Join Waitlist
+                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                 </Button>
+               </a>
+             </div>
 
             {/* Compliance badges - compact grid */}
             <div className="pt-6 border-t border-border">

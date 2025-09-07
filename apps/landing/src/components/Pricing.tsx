@@ -1,6 +1,6 @@
 import { Card } from "@machine/design";
 import { Button } from "@machine/design";
-import { Cloud, Server, Mail, Phone, Check, Calculator, DollarSign, Zap } from "lucide-react";
+import { Cloud, Server, Check, Calculator, DollarSign, Zap } from "lucide-react";
 
 const pricingTiers = [
   {
@@ -103,11 +103,15 @@ const Pricing = () => {
                       <span className="text-text-secondary font-mono">{feature}</span>
                     </li>
                   ))}
-                </ul>
+                 </ul>
 
-                <Button variant="accent" size="lg" className="w-full font-bold text-lg py-4">
-                  Get Custom Quote
-                </Button>
+                 <div className="mt-8">
+                   <a href="https://getwaitlist.com/waitlist/31022" target="_blank" rel="noopener noreferrer">
+                     <Button variant="accent" size="lg" className="w-full font-bold text-lg py-4">
+                       Join Waitlist
+                     </Button>
+                   </a>
+                 </div>
               </div>
             </Card>
           ))}
@@ -150,16 +154,13 @@ const Pricing = () => {
           <p className="text-lg text-text-secondary max-w-2xl mx-auto font-mono">
             Join organizations that chose modern computing over traditional infrastructure limitations.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="accent" size="lg" className="group font-bold">
-              <Mail className="w-5 h-5 mr-2" />
-              Request Custom Analysis
-            </Button>
-            <Button variant="outline" size="lg" className="font-bold">
-              <Phone className="w-5 h-5 mr-2" />
-              Schedule Technical Demo
-            </Button>
-          </div>
+           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+             <a href="https://getwaitlist.com/waitlist/31022" target="_blank" rel="noopener noreferrer">
+               <Button variant="accent" size="lg" className="group font-bold">
+                 Join Waitlist
+               </Button>
+             </a>
+           </div>
           
           <div className="pt-8">
             <div className="flex items-center justify-center gap-8 text-sm text-text-tertiary font-mono">
