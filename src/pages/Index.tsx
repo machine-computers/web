@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import Benefits from "@/components/Benefits";
+import ROICalculator from "@/components/ROICalculator";
 import Compliance from "@/components/Compliance";
 import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
@@ -10,8 +11,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
+        <Hero />
         <Features />
-        <Benefits />
+        <ROICalculator />
         <Compliance />
         <Pricing />
       </main>

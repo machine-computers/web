@@ -42,52 +42,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {isHome && (
-        <div className="border-t border-border bg-surface">
-          <div className="container mx-auto px-6 lg:px-8 py-12">
-            <div className="grid lg:grid-cols-2 gap-10 items-center">
-              <div className="space-y-4 max-w-xl">
-                <h1 className="text-4xl lg:text-5xl font-bold text-text-primary font-mono uppercase tracking-tight">
-                  Cloud machines on your terms
-                </h1>
-                <p className="text-base lg:text-lg text-text-secondary font-mono leading-relaxed">
-                  Provision Mac, Linux, and Windows in under 60 seconds. Run fully managed or self-hosted. Security-first, audit-ready, and built to scale.
-                </p>
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2">
-                  <Link to="/pricing">
-                    <Button variant="accent" size="lg" className="font-bold px-8">
-                      Get Started
-                    </Button>
-                  </Link>
-                  <Link to="/features">
-                    <Button variant="outline" size="lg" className="font-bold px-8">
-                      Explore Features
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div>
-                <div className="grid grid-cols-3 lg:grid-cols-4 auto-rows-[92px] lg:auto-rows-[100px] gap-4">
-                  {headerTiles.map((item, index) => (
-                    <div
-                      key={index}
-                      className={`flex flex-col items-center justify-center gap-2 p-4 border-2 border-border bg-background hover:shadow-md hover:-translate-y-0.5 transition-all ${item.span}`}
-                    >
-                      <item.icon className="w-10 h-10 text-accent" />
-                      <div className="text-xs font-mono uppercase text-text-primary tracking-wide text-center">
-                        {item.label}
-                      </div>
-                      <div className="text-xs text-text-tertiary text-center">
-                        {item.desc}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </header>
   );
 };

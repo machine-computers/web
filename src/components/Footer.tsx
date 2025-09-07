@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="font-semibold text-xl">machine</div>
             <p className="text-text-secondary text-sm">
-              The computer company for the frontier.
+              The computer company for modern enterprises.
             </p>
             <p className="text-text-tertiary text-xs">
               Founded in Europe

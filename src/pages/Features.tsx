@@ -71,36 +71,89 @@ const Features = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="py-24 bg-surface">
-          <div className="container mx-auto px-6 lg:px-8">
-            <div className="text-center mb-20 space-y-6">
-              <h1 className="text-4xl lg:text-6xl font-bold text-text-primary font-mono uppercase tracking-tight">
-                COMPREHENSIVE FEATURES
+        {/* Hero Section */}
+        <section className="py-24 bg-accent text-accent-foreground relative overflow-hidden">
+          {/* Geometric shapes */}
+          <div className="absolute top-20 left-20 w-32 h-32 border-4 border-accent-foreground/15 transform rotate-45" />
+          <div className="absolute bottom-0 right-0 w-40 h-40 bg-accent-foreground/5 transform rotate-12 translate-x-20 translate-y-20" />
+          <div className="absolute top-1/2 left-10 w-16 h-16 border-4 border-accent-foreground/20" />
+          
+          <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <div className="text-center mb-16 space-y-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-foreground text-accent font-mono text-sm font-bold uppercase border-2 border-accent-foreground">
+                <Zap className="w-4 h-4" />
+                Advanced Computing Features
+              </div>
+              <h1 className="text-4xl lg:text-6xl font-bold font-mono uppercase tracking-tight">
+                Compute Power
+                <br />
+                <span className="text-accent-foreground/80">Without Limits</span>
               </h1>
-               <p className="text-xl lg:text-2xl text-text-secondary max-w-3xl mx-auto font-mono leading-relaxed">
-                 We are the computer company of the frontier.
-               </p>
+              <p className="text-xl lg:text-2xl max-w-3xl mx-auto font-mono leading-relaxed opacity-90">
+                Every feature engineered for the frontier. Every capability designed to push boundaries.
+              </p>
             </div>
+          </div>
+        </section>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Features Grid */}
+        <section className="py-24 bg-surface relative overflow-hidden">
+          {/* Geometric shapes */}
+          <div className="absolute top-10 right-10 w-24 h-24 bg-text-primary/5 transform rotate-45" />
+          <div className="absolute bottom-20 left-20 w-20 h-20 border-4 border-accent/15 transform -rotate-12" />
+          <div className="absolute top-1/3 right-1/3 w-14 h-14 bg-accent/10" />
+          
+          <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {features.map((feature, index) => (
-                <Card key={index} className="p-8 border-2 border-border bg-background hover:shadow-lg transition-shadow">
+                <Card key={index} className="group p-8 border-4 border-border bg-background hover:shadow-xl hover:border-accent hover:-translate-y-1 transition-all">
                   <div className="space-y-6">
-                    <div className="w-16 h-16 bg-accent flex items-center justify-center">
-                      <feature.icon className="w-8 h-8 text-accent-foreground" />
+                    <div className="w-20 h-20 bg-accent text-accent-foreground flex items-center justify-center border-2 border-accent group-hover:scale-110 transition-transform">
+                      <feature.icon className="w-10 h-10" />
                     </div>
-                    <h3 className="text-xl font-bold text-text-primary font-mono uppercase tracking-wide">
+                    <h3 className="text-2xl font-bold text-text-primary font-mono uppercase tracking-wide group-hover:text-accent transition-colors">
                       {feature.title}
                     </h3>
                     <p className="text-lg text-text-secondary font-mono leading-relaxed">
                       {feature.description}
                     </p>
-                    <p className="text-sm text-text-tertiary font-mono leading-relaxed">
-                      {feature.details}
-                    </p>
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-sm text-text-tertiary font-mono leading-relaxed">
+                        {feature.details}
+                      </p>
+                    </div>
                   </div>
                 </Card>
               ))}
+            </div>
+
+            {/* Performance Metrics */}
+            <div className="bg-background border-4 border-text-primary p-12">
+              <h3 className="text-3xl font-bold text-text-primary font-mono uppercase text-center mb-12">
+                Frontier Performance Metrics
+              </h3>
+              <div className="grid md:grid-cols-4 gap-8 text-center">
+                <div className="space-y-3">
+                  <div className="text-4xl font-bold text-text-primary font-mono">&lt;60s</div>
+                  <div className="text-sm text-text-secondary font-mono uppercase">Provisioning Time</div>
+                  <div className="text-xs text-text-tertiary font-mono">From request to ready</div>
+                </div>
+                <div className="space-y-3">
+                  <div className="text-4xl font-bold text-text-primary font-mono">99.9%</div>
+                  <div className="text-sm text-text-secondary font-mono uppercase">Uptime SLA</div>
+                  <div className="text-xs text-text-tertiary font-mono">Enterprise-grade reliability</div>
+                </div>
+                <div className="space-y-3">
+                  <div className="text-4xl font-bold text-text-primary font-mono">15+</div>
+                  <div className="text-sm text-text-secondary font-mono uppercase">Global Regions</div>
+                  <div className="text-xs text-text-tertiary font-mono">Multi-cloud deployment</div>
+                </div>
+                <div className="space-y-3">
+                  <div className="text-4xl font-bold text-text-primary font-mono">24/7</div>
+                  <div className="text-sm text-text-secondary font-mono uppercase">Monitoring</div>
+                  <div className="text-xs text-text-tertiary font-mono">Continuous health checks</div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
